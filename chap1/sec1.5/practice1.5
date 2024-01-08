@@ -1,0 +1,58 @@
+//pra1
+
+#include <iostream>
+
+void show_value(float f)
+{
+    std::cout<<f<<std::endl;
+}
+
+int main()
+{
+   float i=42.195f;
+    show_value(i);
+}
+
+
+//pra2
+
+#include <iostream>
+
+
+
+int main()
+{
+   float f=100.001f;
+    f -= 100.00f;
+    std::cout<<f<<std::endl;
+}
+
+// 答えは0.001ではなく0.00099451である。これはfloat表現に使われているbit数が限定的であることによる。
+
+
+//pra3
+
+#include <iostream>
+
+
+
+int main()
+{
+   int i=0;
+   int* pi =&i;
+    *pi=42;
+    i=1;
+    std::cout<<*pi<<std::endl;
+}
+
+// int main()
+// {
+//    int i=0;
+//    i=42;
+//     std::cout<<i<<std::endl;
+// }
+
+// まずiのアドレスをint型ポインタ変数に与える。このポインタ変数の値を更新しておく。
+// 上のプログラムを回す分には、ポインタ変数piの値をいじろうがiをいじろうが結果は同じ。
+
+
