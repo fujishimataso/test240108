@@ -1,0 +1,31 @@
+// practice1,2
+#include <iostream>
+
+int main()
+{
+    int a = 10+ 1 * 50 - 40;
+    std::cout << a << std::endl;
+    int b = (10 + 1) * (50 - 40); // 括弧の中から計算
+    std::cout << b << std::endl;
+}
+
+//practice3
+
+#include <iostream>
+
+// int main()
+// {
+//     int i= 0;
+//     i*=2+4;
+//     i%=3;
+//     std::cout<<i<<std::endl;
+// }
+
+int main()
+{
+    int i= 0;
+    i=i*(2+4);
+    i=i%3;
+    std::cout<<i<<std::endl;
+}
+
