@@ -1,0 +1,108 @@
+//pra1
+
+#include <iostream>
+
+// void show_message(int value)
+// {
+//     if (10 <= value && value < 20)
+//     {
+//         std::cout << "10以上20未満です" << std::endl;
+//     }
+//     else
+//     {
+//         std::cout << "10以上20未満ではありません" << std::endl;
+//     }
+// }
+
+void show_message(int value)
+{
+    if (10 > value || value >= 20)
+    {
+        std::cout << "10以上20未満ではありません" << std::endl;
+    }
+    else
+    {
+        std::cout << "10以上20未満です" << std::endl;
+    }
+}
+
+int main()
+{
+    show_message(9); // 10未満なのでelse文のメッセージが表示される
+    show_message(15); // 10以上20未満なのでif文のメッセージが表示される
+    show_message(20); // 20以上なのでelse文のメッセージが表示される
+}
+
+//pra2
+
+#include <iostream>
+
+// int main()
+// {
+//     int a = 2;
+//     switch (a + 1)
+//     {
+//     case 1:
+//         std::cout << "a + 1は1です" << std::endl;
+//         break;
+//     case 2:
+//         std::cout << "a + 1は2です" << std::endl;
+//         break;
+//     default:
+//         std::cout << "a + 1は1でも2でも3でもありません" << std::endl;
+//         break;
+//     case 3:
+//         std::cout << "a + 1は3です" << std::endl;
+//         break;
+//     }
+// }
+
+int main()
+{
+    int a = 2;
+    switch (a + 1)
+    {
+    case 4:
+        std::cout << "a + 1は1です" << std::endl;
+        break;
+    case 5:
+        std::cout << "a + 1は2です" << std::endl;
+        break;
+    // default:
+    //     std::cout << "a + 1は1でも2でも3でもありません" << std::endl;
+    //     break;
+    case 100:
+        std::cout << "a + 1は3です" << std::endl;
+        break;
+    }
+}
+
+//pra3
+
+
+int main()
+{
+    int a = 2;
+    if(a == 0)
+    {
+        std::cout << "a + 1は1です" << std::endl;
+    }
+    else
+    {
+        if(a == 1)
+        {
+            std::cout << "a + 1は2です" << std::endl;
+        }
+    else
+        {
+        if(a == 2)
+        {
+            std::cout << "a + 1は3です" << std::endl;
+        }
+        else
+        {
+            std::cout << "a + 1は1でも2でも3でもありません" << std::endl;
+        }
+    }
+    }
+}
